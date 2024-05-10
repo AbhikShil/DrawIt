@@ -1,0 +1,61 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Drawing App</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styling.css">
+    </head>	
+
+    <body>
+        <div class="jumbotron" id="myContent">
+        <h1>Welcome To <span id="titleStyle">DrawIt</span></h1>
+        <h2>Let's Draw Out Our Imagination.</h2>
+        <p>Draw From Anywhere In The World And</p>
+        <p>Save It Locally In The Form Of Image</p>  
+        </div>
+        <div class="inputContainer">
+            <!--color-->
+            <div class="input" id="colorInput">
+                <input type="color" list id="paintColor">
+            </div>
+            <div class="input" id="thicknessInput">
+                <div id="circle"></div>
+            </div>
+            <div class="input">
+                <div id="slider"></div>
+            </div>
+        </div>
+        <div id="container">
+            <canvas id="paint" width="500px" height="400px"></canvas>
+        </div>
+        <div class="inputContainer2">
+            <!--Erase-->
+            <div class="input2">
+                <span id="erase" class="btn btn-danger">Erase</span>
+            </div>
+            <div class="input2">
+                <span id="save" class="btn btn-primary">Save</span>
+            </div>
+            <div class="input2">
+                <span id="reset" class="btn btn-warning">Reset</span>
+            </div>
+            <div class="input2">
+                <span id="download" class="btn btn-success">Download</span>
+            </div>
+        </div>
+        <div class="footer">
+        <div class="container">
+            <p>AbhikShil Copyright &copy; 2021-<?php $today=date("Y"); echo $today?>.</p>
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="html2canvas.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+
+</html>
